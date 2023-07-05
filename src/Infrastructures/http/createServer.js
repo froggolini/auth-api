@@ -30,7 +30,7 @@ const createServer = async (container) => {
   });
 
   server.ext('onPreResponse', (request, h) => {
-    // mendapatkan konteks response dari request
+    // mendapatkan konteks response dari requestt
     const { response } = request;
 
     if (response instanceof Error) {
